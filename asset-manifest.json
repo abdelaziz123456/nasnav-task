@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/nasnav-task/static/css/main.f5939d79.css",
+    "main.js": "/nasnav-task/static/js/main.da0c1f36.js",
+    "index.html": "/nasnav-task/index.html",
+    "main.f5939d79.css.map": "/nasnav-task/static/css/main.f5939d79.css.map",
+    "main.da0c1f36.js.map": "/nasnav-task/static/js/main.da0c1f36.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5939d79.css",
+    "static/js/main.da0c1f36.js"
+  ]
+}
