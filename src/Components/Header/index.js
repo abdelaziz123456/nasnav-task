@@ -25,10 +25,10 @@ export default function Header() {
 
         <div className="center">
           <p className="m-0">
-            {" "}
+            
             <ArrowBackIosOutlined fontSize="small" /> Valentine's Day Offers Buy
-            Two Get One Free <ins>Shop Now</ins>{" "}
-            <ArrowForwardIosOutlined fontSize="small" />{" "}
+            Two Get One Free <ins>Shop Now</ins>
+            <ArrowForwardIosOutlined fontSize="small" />
           </p>
         </div>
 

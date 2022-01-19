@@ -10,7 +10,7 @@ export default function Footer() {
 
         <div className="left col-12 col-lg-6 my-3">
           <img
-            src={process.env.PUBLIC_URL +"img/footer/yeshtery.png"}
+            src={process.env.PUBLIC_URL +"/img/footer/yeshtery.png"}
             alt=""
             width="220"
             height="58"
