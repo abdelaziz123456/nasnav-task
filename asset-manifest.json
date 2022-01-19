@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/nasnav-task/static/css/main.f653826e.css",
-    "main.js": "/nasnav-task/static/js/main.cc18f6e0.js",
+    "main.js": "/nasnav-task/static/js/main.ebf6b858.js",
     "index.html": "/nasnav-task/index.html",
     "main.f653826e.css.map": "/nasnav-task/static/css/main.f653826e.css.map",
-    "main.cc18f6e0.js.map": "/nasnav-task/static/js/main.cc18f6e0.js.map"
+    "main.ebf6b858.js.map": "/nasnav-task/static/js/main.ebf6b858.js.map"
   },
   "entrypoints": [
     "static/css/main.f653826e.css",
-    "static/js/main.cc18f6e0.js"
+    "static/js/main.ebf6b858.js"
   ]
 }
