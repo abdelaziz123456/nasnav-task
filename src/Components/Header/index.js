@@ -70,7 +70,7 @@ export default function Header() {
           <img src={process.env.PUBLIC_URL +"/img/addidas.png"} height="57" alt="" />
         </div>
         <div className="right d-flex  ">
-          <p>
+          <p data-bs-toggle="modal" data-bs-target="#exampleModal">
             <ShoppingBasketOutlined  />
             <span>Cart</span>
           </p>

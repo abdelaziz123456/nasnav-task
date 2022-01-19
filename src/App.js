@@ -3,6 +3,7 @@ import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import ProductDetails from "./Components/ProductDetails";
 import ProductsList from "./Components/ProductsList";
+import ShoppingCard from "./Components/ShoppingCard";
 
 function App() {
   
@@ -12,6 +13,11 @@ function App() {
       <ProductDetails />
       <ProductsList  />
       <Footer />
+      <ShoppingCard/>
+
+
+
+
     </div>
   );
 }
