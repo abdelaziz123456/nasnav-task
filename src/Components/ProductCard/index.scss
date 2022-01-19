@@ -1,0 +1,54 @@
+
+@import '../../variables.scss';
+.product-card{
+    .card{
+        max-width: 300px;
+        position: relative;
+        .description{
+            font-size: small;
+            font-weight: bold;
+        }
+        .icon{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #fff;
+            border-radius: 3px;
+        }
+        .price{
+            color: $color-secondary;
+            span{
+                color: #000;
+                font-size: smaller;
+            }
+        }
+
+        .addidas{
+            width:40px ;
+            height: 20px;
+        }
+
+        .discount{
+            font-size: 12px;
+            height: 18px;
+            background-color: $color-primary;
+            
+            
+
+        }
+    
+        .rating{
+            color: orange;
+    
+            small{
+                color: #000;
+                font-size: smaller;
+                font-weight: bold;
+            }
+        }
+
+    }
+    
+}
