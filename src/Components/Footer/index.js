@@ -10,7 +10,7 @@ export default function Footer() {
 
         <div className="left col-12 col-lg-6 my-3">
           <img
-            src="img/footer/yeshtery.png"
+            src={process.env.PUBLIC_URL +"img/footer/yeshtery.png"}
             alt=""
             width="220"
             height="58"
@@ -23,13 +23,13 @@ export default function Footer() {
             volutpat.
           </p>
           <p>
-            {" "}
+            
             Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
             suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis
             autem vel eum iriure dolor in hendrerit in vulputate velit esse
             molestie consequat, vel illum dolore eu feugiat nulla. Lorem ipsum
             dolor sit amet, consectetuer adipiscing elit, sed dia m nonummy nibh
-            euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.{" "}
+            euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
           </p>
           <p>
             esse molestie consequat, vel illum dolore eu feugiat nulla facilisis
@@ -67,10 +67,10 @@ export default function Footer() {
               <p>Shipping And Returns</p>
             </div>
             <div className="col-6 links ps-5">
-              <p><img src="/img/footer/facebook.png" alt="" /> /YESHTERY</p>
-              <p><img src="/img/footer/linkedin.png" alt="" />/YESHTERY</p>
-              <p><img src="/img/footer/instagram.png" alt="" />/YESHTERY</p>
-              <p><img src="/img/footer/twitter.png" alt="" />/YESHTERY</p>
+              <p><img src={process.env.PUBLIC_URL +"/img/footer/facebook.png"} alt="" /> /YESHTERY</p>
+              <p><img src={process.env.PUBLIC_URL +"/img/footer/linkedin.png"} alt="" />/YESHTERY</p>
+              <p><img src={process.env.PUBLIC_URL +"/img/footer/instagram.png"} alt="" />/YESHTERY</p>
+              <p><img src={process.env.PUBLIC_URL +"/img/footer/twitter.png"} alt="" />/YESHTERY</p>
             </div>
           </div>
 
@@ -89,13 +89,13 @@ export default function Footer() {
         <small className="fw-light"> &#169; 2021 yesterday. all rights reserved	</small>
 
         <div className="d-flex">
-          <img src="img/footer/cash.png" alt="" height='30' className="mx-1" />
-          <img src="img/footer/visa.png" alt="" height='30' className="mx-1" />
-          <img src="img/footer/master.png" alt="" height='30' className="mx-1" />
+          <img src={process.env.PUBLIC_URL +"img/footer/cash.png"} alt="" height='30' className="mx-1" />
+          <img src={process.env.PUBLIC_URL +"img/footer/visa.png"} alt="" height='30' className="mx-1" />
+          <img src={process.env.PUBLIC_URL +"img/footer/master.png"} alt="" height='30' className="mx-1" />
         </div>
 
 
-        <p className="fw-light mb-0">powerd by <img src="img/footer/nasnav.png" alt="" /></p>
+        <p className="fw-light mb-0">powerd by <img src={process.env.PUBLIC_URL +"img/footer/nasnav.png"} alt="" /></p>
 
 
       </div>

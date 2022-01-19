@@ -20,7 +20,7 @@ export default function Header() {
       <div className="top-header  d-flex justify-content-between  ">
         <div className="left">
           <ListIcon />
-          <img src="/img/yeshtery.svg" alt="" />
+          <img src={process.env.PUBLIC_URL +"/img/yeshtery.svg"} alt="" />
         </div>
 
         <div className="center">
@@ -67,7 +67,7 @@ export default function Header() {
         <input type="search" id="form1" class="form-control" placeholder="Search" />
         </div>
         <div className="center">
-          <img src="/img/addidas.png" height="57" alt="" />
+          <img src={process.env.PUBLIC_URL +"/img/addidas.png"} height="57" alt="" />
         </div>
         <div className="right d-flex  ">
           <p>
