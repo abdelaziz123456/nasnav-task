@@ -5,7 +5,7 @@ import { StarRate } from "@material-ui/icons";
 export default function ProductCard(props) {
   let product = props.product;
   return (
-    <div className="product-card col-12 col-sm-6 col-lg-3 ">
+    <div className="product-card col-12 col-sm-6 col-lg-3  my-3">
       <div className="card p-2">
         <img
           src={process.env.PUBLIC_URL + "/img/card/360.png"}

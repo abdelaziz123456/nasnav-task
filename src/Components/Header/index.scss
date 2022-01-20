@@ -2,20 +2,18 @@
 
 .header {
 
-
-
+  
   //top header style start
   .top-header {
-      padding: 10px 120px !important;
+    padding: 10px 120px !important;
     background-color: $color-primary;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 10px;
 
-
-
     //left section style start
+    
 
     .left {
       display: flex;
@@ -26,142 +24,123 @@
       }
     }
 
-
     //center section style start
 
     .center {
-        
-        p{
-            font-weight: 400;
-            ins{
-                font-weight: 500;
-                cursor: pointer;
-            }
+      p {
+        font-weight: 400;
+        ins {
+          font-weight: 500;
+          cursor: pointer;
         }
-
-
+      }
     }
-
-
 
     //right section style start
 
-    .right p {
-      margin: 0 15px;
-      cursor: pointer;
+    .right {
 
-      span {
-        font-size: 14px;
-        font-weight: 500;
-        margin-left: 5px;
+    
+
+
+      p {
+        margin: 0 15px;
+        cursor: pointer;
+
+        span {
+          font-size: 14px;
+          font-weight: 500;
+          margin-left: 5px;
+        }
       }
+      
+      
+
+
+
     }
   }
 
   //top header style end
 
-
-
-
-
-
-
-
-
   //mid header style start
-.mid-header{
+  .mid-header {
     padding: 10px 120px !important;
 
     //left section style start
 
-    .left{
-        position: relative;
-        input{
-            border-radius: 20px !important;
-            
-            padding-left: 40px;
-            
-            &::placeholder{
-                color: black;
-                font-weight: 500;
-        
-            }
-            
-        }
-        label{
-            position: absolute;
-            left: 10px;
-            z-index: 2;
-            top: 4px;
-           
-        
-        
-        }
-    }
+    .left {
+      position: relative;
+      input {
+        border-radius: 20px !important;
 
- //right section style start
+        padding-left: 40px;
 
-    .right p {
-        margin: 0 15px;
-        cursor: pointer;
-  
-        span {
-          font-size: 16px;
-          font-weight: 600;
-          margin-left: 5px;
+        &::placeholder {
+          color: black;
+          font-weight: 500;
         }
       }
-
-
-}
-
-
-    //mid header style end
-
-
-
-
-
-
-
-
-
-
-
-
-    //bottom header style start
-
-    .bottom-header{
-        padding: 10px 120px !important;
-        background-color: #000;
-        color: #fff;
-        p{
-            margin-bottom: 0;
-            font-weight: 500;
-            cursor: pointer;
-            &:hover{
-                color: #F11133;
-            }
-        }
+      label {
+        position: absolute;
+        left: 10px;
+        z-index: 2;
+        top: 4px;
+      }
     }
 
-
-     //bottom header style end
-
+    //right section style start
 
 
 
+.right{
+  p {
+    margin: 0 15px;
+    cursor: pointer;
+
+    span {
+      font-size: 16px;
+      font-weight: 600;
+      margin-left: 5px;
+    }
+  }
 
 
+    .cart{
+      position: relative ;
+      .product-number{
+        position: absolute ;
+        top: -5px ;
+        left: 20px;
+        background-color: $color-primary;
+        border-radius: 50%;
+      }
+    }
+  }
 
+   
+  }
 
+  //mid header style end
 
+  //bottom header style start
 
+  .bottom-header {
+    padding: 10px 120px !important;
+    background-color: #000;
+    color: #fff;
+    p {
+      margin-bottom: 0;
+      font-weight: 500;
+      cursor: pointer;
+      &:hover {
+        color: #f11133;
+      }
+    }
+  }
 
-
-
-
-
-
-
+  //bottom header style end
 }
+
+
+

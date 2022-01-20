@@ -1,16 +1,17 @@
 import React from "react";
 import "./index.scss";
-export default function ShoppingCard() {
+export default function ShoppingCard(props) {
+  let quantity=props.products.quantity;
   return (
     <div
-      class="modal fade"
+      className="modal fade"
       id="exampleModal"
-      tabindex="-1"
+      tabIndex="-1"
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog my-0">
-        <div class="modal-content p-3">
+      <div className="modal-dialog my-0">
+        <div className="modal-content p-3">
           <button
             type="button"
             className="btn-close "
@@ -20,31 +21,62 @@ export default function ShoppingCard() {
 
           <h3 className="header text-center">My Cart</h3>
 
-          <h6 className="fw-bold">Cart Summary</h6>
+          {quantity ? 
 
 
-          <div className="item-cart d-flex">
-                <div className="image">
+
+              <>
+              <h6 className="fw-bold">Cart Summary</h6>
+
+              
+              <div className="item-cart d-flex p-2">
+                <div >
+                  <img src={require("../../images/cart.png")} alt="" />
+                </div >
+
+                <div className="details d-flex flex-column ms-3">
+                  <p>Lorem ipsum dolor sit amet, consecte adipiscing elit.</p>
+
+                  <small> Quantity {quantity}</small>
+
+
+                  <div className="d-flex justify-content-between align-items-center my-2">
+                    <p className="price mb-0">
+                        9,999 LE
+                    </p>
+
+                    <button className="btn" onClick={props.clearCart}>
+                      Remove
+                    </button>
+                  </div>
 
                 </div>
-                <div className="details">
-
-                </div>
-          </div>
-
-        <h5 className="fw-bold text-center my-3">Total : 19,999 LE</h5>
 
 
 
-          <div className="d-flex justify-content-between">
-              <button className="btn review">
-                  Review Cart
-                </button>
-                <button className="btn check"
-                >
-                    Complete Checkout
-                </button>
-          </div>
+              </div>
+
+              <h5 className="fw-bold text-center my-3">Total : {quantity * 9999} LE</h5>
+
+              <div className="d-flex justify-content-between">
+                <button className="btn review">Review Cart</button>
+                <button className="btn check">Complete Checkout</button>
+              </div>
+              </>
+
+
+
+
+
+
+            
+           : 
+
+
+
+           
+            <h4 className="my-5 text-center">Your Cart Is Empty</h4>
+          }
         </div>
       </div>
     </div>

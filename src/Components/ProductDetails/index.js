@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./index.scss";
 import {
   ArrowBackIosOutlined,
@@ -6,26 +6,46 @@ import {
   StarRate,
 } from "@material-ui/icons";
 
-export default function ProductDetails(props) {
+export default class ProductDetails extends Component {
+
+
+  //counter state for products number
+
+state={
+  counter:0
+}
+
+increaseCounter=()=>{
+  this.setState({counter:this.state.counter+1})
+}
+
+decreaseCounter=()=>{
+  if(this.state.counter>0){
+    this.setState({counter:this.state.counter-1})
+  }
+
+}
+
+  render(){
   return (
     <div className="product-details">
       {/* breadcrumb start */}
 
       <nav aria-label="breadcrumb ">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
+        <ol className="breadcrumb">
+          <li className="breadcrumb-item">
             <a href="#">Men</a>
           </li>
-          <li class="breadcrumb-item">
+          <li className="breadcrumb-item">
             <a href="#">Clothing</a>
           </li>
-          <li class="breadcrumb-item">
+          <li className="breadcrumb-item">
             <a href="#">Tops</a>
           </li>
-          <li class="breadcrumb-item">
+          <li className="breadcrumb-item">
             <a href="#">Adidas</a>
           </li>
-          <li class="breadcrumb-item">Adidas Black T-Shirt</li>
+          <li className="breadcrumb-item">Adidas Black T-Shirt</li>
         </ol>
       </nav>
 
@@ -96,8 +116,14 @@ export default function ProductDetails(props) {
               <StarRate fontSize="small" color="disabled" />
               <small className="mx-3 "> 4.9 of 5</small>
 
-              <small className="mx-3 text-secondary"> 22 rates</small>
+              <small className="mx-3 text-secondary"> 22 Rates</small>
             </p>
+          </div>
+
+          <div className="price d-flex ">
+            <p className="mx-2">9,999 LE</p>
+            <del className="text-secondary mx-2 ">9.999 LE</del>
+            <small className="px-1">30% Off</small>
           </div>
 
           <hr />
@@ -137,11 +163,11 @@ export default function ProductDetails(props) {
           <h5 className="ms-2">Quantity</h5>
 
           <div className="number d-flex justify-content-between align-items-center">
-            <button className="btn ">-
+            <button className="btn " onClick={this.decreaseCounter}>-
             </button>
 
-            1
-            <button className="btn">
+            {this.state.counter}
+            <button className="btn" onClick={this.increaseCounter}>
               +
 
             </button>
@@ -149,7 +175,7 @@ export default function ProductDetails(props) {
 
           <div className="d-flex justify-content-between">
 
-            <button className="addCart d-flex  btn justify-content-center align-items-center">
+            <button onClick={()=>{this.props.addProduct(this.state.counter)}} className="addCart d-flex  btn justify-content-center align-items-center">
               Add To Cart
             </button>
             <button className="pick btn d-flex justify-content-center align-items-center">
@@ -171,4 +197,5 @@ export default function ProductDetails(props) {
       {/* Main section end */}
     </div>
   );
+}
 }

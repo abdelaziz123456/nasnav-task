@@ -47,7 +47,7 @@ export default function Footer() {
           <div className="d-flex align-items-center subscribe">
           <input
               type="email"
-              class="form-control "
+              className="form-control "
               
               placeholder="Enter Your Email"
             />

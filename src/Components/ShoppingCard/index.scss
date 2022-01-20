@@ -32,6 +32,27 @@
         color: #fff;
     }
 
+    .item-cart{
+      border: 1px solid rgba(128, 128, 128, 0.137);
+      border-radius: 10px;
+
+      .details{
+        small{
+          font-size: 11px;
+        }
+
+        .price{
+          color: $color-secondary;
+          font-weight: bold;
+        }
+        .btn{
+          background-color: $color-primary;
+          border-radius: 20px;
+          font-size: smaller;
+        }
+      }
+    }
+
 
     
   }
