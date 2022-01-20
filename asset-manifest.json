@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/nasnav-task/static/css/main.e9fb8a25.css",
-    "main.js": "/nasnav-task/static/js/main.04616bb2.js",
+    "main.css": "/nasnav-task/static/css/main.ff018449.css",
+    "main.js": "/nasnav-task/static/js/main.fb00a648.js",
     "static/media/adidas.png": "/nasnav-task/static/media/adidas.e200ea73a0692b0ba50c.png",
     "static/media/4.png": "/nasnav-task/static/media/4.e354c594db9e6ed01c55.png",
     "static/media/3.png": "/nasnav-task/static/media/3.522cad545be1d70b3941.png",
@@ -9,11 +9,11 @@
     "static/media/2.png": "/nasnav-task/static/media/2.4dcf49a9bdc4d15b4edd.png",
     "static/media/cart.png": "/nasnav-task/static/media/cart.cc2685535d4df5880e68.png",
     "index.html": "/nasnav-task/index.html",
-    "main.e9fb8a25.css.map": "/nasnav-task/static/css/main.e9fb8a25.css.map",
-    "main.04616bb2.js.map": "/nasnav-task/static/js/main.04616bb2.js.map"
+    "main.ff018449.css.map": "/nasnav-task/static/css/main.ff018449.css.map",
+    "main.fb00a648.js.map": "/nasnav-task/static/js/main.fb00a648.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9fb8a25.css",
-    "static/js/main.04616bb2.js"
+    "static/css/main.ff018449.css",
+    "static/js/main.fb00a648.js"
   ]
 }
