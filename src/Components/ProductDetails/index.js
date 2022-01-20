@@ -12,7 +12,8 @@ export default class ProductDetails extends Component {
   //counter state for products number
 
 state={
-  counter:0
+  counter:0,
+  loaded:false
 }
 
 increaseCounter=()=>{
@@ -26,10 +27,29 @@ decreaseCounter=()=>{
 
 }
 
+loading=()=>{
+  setTimeout(() => {
+    this.setState({loaded:true})
+   }, 1000)
+}
+
   render(){
   return (
+
+
+    <>
+     {
+       
+        this.loading()
+
+      }
+
+
+    { this.state.loaded ?      
     <div className="product-details">
       {/* breadcrumb start */}
+
+     
 
       <nav aria-label="breadcrumb ">
         <ol className="breadcrumb">
@@ -195,7 +215,14 @@ decreaseCounter=()=>{
       </div>
 
       {/* Main section end */}
+    </div> : 
+    <div className="d-flex justify-content-center">
+    <div class="spinner-border "  role="status">
+      <span class="visually-hidden">Loading...</span>
     </div>
+</div>
+  }
+    </>
   );
 }
 }

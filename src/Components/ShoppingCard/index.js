@@ -1,8 +1,17 @@
-import React from "react";
+
+
+import React, { Component } from "react";
 import "./index.scss";
-export default function ShoppingCard(props) {
-  let quantity=props.products.quantity;
+export default class ShoppingCard extends Component {
+    
+ 
+  
+  render(){
+    
+    const quantity=this.props.products.quantity;
+    
   return (
+
     <div
       className="modal fade"
       id="exampleModal"
@@ -10,6 +19,8 @@ export default function ShoppingCard(props) {
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
+
+    
       <div className="modal-dialog my-0">
         <div className="modal-content p-3">
           <button
@@ -19,6 +30,14 @@ export default function ShoppingCard(props) {
             aria-label="Close"
           ></button>
 
+
+
+       
+
+
+
+
+
           <h3 className="header text-center">My Cart</h3>
 
           {quantity ? 
@@ -26,6 +45,11 @@ export default function ShoppingCard(props) {
 
 
               <>
+
+              
+
+
+
               <h6 className="fw-bold">Cart Summary</h6>
 
               
@@ -45,7 +69,7 @@ export default function ShoppingCard(props) {
                         9,999 LE
                     </p>
 
-                    <button className="btn" onClick={props.clearCart}>
+                    <button className="btn" onClick={this.props.clearCart}>
                       Remove
                     </button>
                   </div>
@@ -81,4 +105,5 @@ export default function ShoppingCard(props) {
       </div>
     </div>
   );
+}
 }

@@ -32,6 +32,9 @@ class App extends Component {
       <Header products={this.state.quantity}/>
       <ProductDetails  addProduct={this.addToCart} />
       <ProductsList  />
+
+
+      
       <Footer />
       <ShoppingCard products={this.state} clearCart={this.clearCart}/>
 
